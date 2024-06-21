@@ -3,9 +3,10 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 function UpperFooterPart() {
   return (
+    <>
     <div className='upperFooterPart'>
       <div className="upperFooterPart-1">
-        <div className="upf1">
+        <div className="upf1 footer-col">
             <h3>Who are we ?</h3>
             <ul>
                 <li><Link to="/ourteam"  className="footerList">Our Team</Link></li>
@@ -16,7 +17,7 @@ function UpperFooterPart() {
                 <li><Link  className="footerList">Investor Relation</Link></li>
             </ul>
         </div>
-        <div className="upf2">
+        <div className="upf2 footer-col">
         <h3>Help</h3>
             <ul>
                 <li><Link to="/contact"  className="footerList">Contact Us</Link></li>
@@ -27,14 +28,14 @@ function UpperFooterPart() {
                 <li><Link  className="footerList">Privacy Policy</Link></li>
             </ul>
         </div>
-        <div className="upf3">
+        <div className="upf3 footer-col">
         <h3>INSPIRE US </h3>
             <ul>
                 <li><Link to="/books"  className="footerList">Beauty Books</Link></li>
                 <li><Link  className="footerList">Divueens Network</Link></li>
             </ul>
         </div>
-        <div className="upf4">
+        <div className="upf4 footer-col">
         <h3>QUICK LINKS</h3>
             <ul>
                 <li><Link to="/offer"  className="footerList">Special Offers</Link></li>
@@ -43,7 +44,7 @@ function UpperFooterPart() {
                 <li><Link  className="footerList">Divueens Fashion</Link></li>
             </ul>
         </div>
-        <div className="upf5">
+        <div className="upf5 footer-col">
         <h3>TOP CATEGORIES</h3>
             <ul>
                 <li><Link to="/makeup"  className="footerList">Makeup</Link></li>
@@ -52,8 +53,28 @@ function UpperFooterPart() {
             </ul>
         </div>
       </div>
-      <div className="upperFooterPart-2"></div>
+      <div className="upperFooterPart-2">
+        <div className="upf2-1">
+            <p>Connect with us through</p>
+            <div className="socialIcons">
+                <a href=""><i className="fa-brands fa-facebook"></i></a>
+                <a href=""><i className="fa-brands fa-instagram"></i></a>
+                <a href=""><i className="fa-brands fa-youtube"></i></a>
+                <a href=""><i className="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div className="uff2-2">
+        <div className="help">
+                    For any query contact us at<br/> 234567889 <br/>(Monday to saturday 1:00 to 6:00)
+                </div>
+        </div>
+      </div>
     </div>
+        <div className="lowerFooterPart">
+            <h2>Caution !</h2>
+            <p>DIVUEENS never call regarding offers,free gifts or payment through links,Beaware of fraud calls or messages.</p>
+        </div>
+    </>
   )
 }
 
