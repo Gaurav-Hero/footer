@@ -17,18 +17,22 @@ body,html{
 ul{
   list-style-type: none;
 }
+ul > li {
+  padding: 10px 0px 10px 0px;
+}
 .upperFooterPart-1{
   display: flex;
   justify-content: space-evenly;
 }
 .footerList{
+  text-decoration: none;
+  color: darkgray;
   padding: 10px 0px 10px 0px;
   transition: linear 0.2s;
   cursor: pointer;
 }
 .footerList:hover{
-   color: #b645f7;
-   border-bottom: 2px solid rgb(172, 66, 116);
+   color: #ffffff;
 }
 .upperFooterPart-1  h3 {
   margin-bottom: 30px;
