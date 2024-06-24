@@ -3,11 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body,
-html {
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -23,6 +18,8 @@ html {
 }
 
 .upperFooterPart {
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 5%;
   width: 90%;
   color: #fff;
@@ -30,11 +27,8 @@ html {
 
 .close {
   display: block;
+  margin-top: 15px;
   list-style-type: none;
-}
-
-.all_Items {
-  display: block;
 }
 
 .close>li {
@@ -143,8 +137,8 @@ html {
 Responsiveness
 */
 @media (max-width: 950px) {
-  .footermain {
-    font-size: 12px !important;
+  .upf2-1 {
+    flex-direction: column;
   }
 
   .socialIcons>a {
@@ -159,11 +153,7 @@ Responsiveness
   }
 }
 
-@media (max-width: 450px) {
-  .footermain {
-    font-size: 10px !important;
-  }
-  
+@media (max-width: 650px) {
   .upperFooterPart-1>.drpBtn {
     font-size: 15px;
     margin-bottom: 10px;
@@ -174,7 +164,7 @@ Responsiveness
     margin-bottom: 5px;
   }
 
-  .all_Items{
+  .all_Items {
     display: block;
   }
 
@@ -183,12 +173,23 @@ Responsiveness
     padding: 2px 0px 2px 0px;
   }
 
-  .upperFooterPart-1{
+  .upperFooterPart-1 {
     flex-direction: column;
+    gap: 20px;
+  }
+  
+  .upperFooterPart-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .upperFooterPart-2>div {
+    width: 100%;
   }
 
   .upf2-1 {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .socialIcons>a {
