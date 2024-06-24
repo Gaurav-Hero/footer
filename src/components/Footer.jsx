@@ -13,7 +13,7 @@ function FooterBlock() {
       <div className="upperFooterPart-1">
         <div className="upf1 footer-col">
           <h3 onClick={() => (prev !== 1 ? cngView(1) : cngView(0))} className="drpBtn">
-            Who are we ?{" "}
+            Who are we ?
             <i
               className={`fa-solid ${
                 toggleView === 1 ? "fa-chevron-up" : "fa-chevron-down"
@@ -45,7 +45,7 @@ function FooterBlock() {
         </div>
         <div className="upf2 footer-col">
           <h3 onClick={() => (prev !== 2 ? cngView(2) : cngView(0))} className="drpBtn">
-            Help{" "}
+            Help
             <i
               className={`fa-solid ${
                 toggleView === 2 ? "fa-chevron-up" : "fa-chevron-down"
@@ -77,7 +77,7 @@ function FooterBlock() {
         </div>
         <div className="upf3 footer-col">
           <h3 onClick={() => (prev !== 3 ? cngView(3) : cngView(0))} className="drpBtn">
-            INSPIRE US{" "}
+            INSPIRE US
             <i
               className={`fa-solid ${
                 toggleView === 3 ? "fa-chevron-up" : "fa-chevron-down"
@@ -97,7 +97,7 @@ function FooterBlock() {
         </div>
         <div className="upf4 footer-col">
           <h3 onClick={() => (prev !== 4 ? cngView(4) : cngView(0))} className="drpBtn">
-            QUICK LINKS{" "}
+            QUICK LINKS
             <i
               className={`fa-solid ${
                 toggleView === 4 ? "fa-chevron-up" : "fa-chevron-down"
@@ -123,7 +123,7 @@ function FooterBlock() {
         </div>
         <div className="upf5 footer-col">
           <h3 onClick={() => (prev !== 5 ? cngView(5) : cngView(0))} className="drpBtn">
-            TOP CATEGORIES{" "}
+            TOP CATEGORIES
             <i
               className={`fa-solid ${
                 toggleView === 5 ? "fa-chevron-up" : "fa-chevron-down"
