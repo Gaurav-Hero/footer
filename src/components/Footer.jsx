@@ -3,14 +3,16 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-window.onclick = function(event) {
-  if (!event.target.matches('.drpBtn')) {
-    var dropdowns = document.getElementsByClassName("close");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('all_Items')) {
-        openDropdown.classList.remove('all_Items');
+if (typeof window !== 'undefined') {
+  window.onclick = function(event) {
+    if (!event.target.matches('.drpBtn')) {
+      var dropdowns = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('all_Items')) {
+          openDropdown.classList.remove('all_Items');
+        }
       }
     }
   }
