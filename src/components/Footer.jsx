@@ -3,6 +3,117 @@ import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
+const baadiList = [
+  {
+    title: "Who are we ?",
+    chhotiList: [
+      {
+        url: "",
+        txt: "Our Team",
+      },
+      {
+        url: "",
+        txt: "Press",
+      },
+      {
+        url: "",
+        txt: "Authenticity",
+      },
+      {
+        url: "",
+        txt: "Careers CSR",
+      },
+      {
+        url: "",
+        txt: "Divueens",
+      },
+      {
+        url: "",
+        txt: "Investor Relation",
+      },
+    ],
+  },
+  {
+    title: "Help",
+    chhotiList: [
+      {
+        url: "",
+        txt: "Contact Us",
+      },
+      {
+        url: "",
+        txt: "Frequently Asked Questions",
+      },
+      {
+        url: "",
+        txt: "Cancellation and Return",
+      },
+      {
+        url: "",
+        txt: "Shipping and Delivery ",
+      },
+      {
+        url: "",
+        txt: "Sell on Divueens",
+      },
+      {
+        url: "",
+        txt: "Privacy Policy",
+      },
+    ],
+  },
+  {
+    title: "INSPIRE US",
+    chhotiList: [
+      {
+        url: "",
+        txt: "Beauty Books",
+      },
+      {
+        url: "",
+        txt: "Divueens Network",
+      },
+    ],
+  },
+  {
+    title: "QUICK LINKS",
+    chhotiList: [
+      {
+        url: "",
+        txt: "Special Offers",
+      },
+      {
+        url: "",
+        txt: "Trendings",
+      },
+      {
+        url: "",
+        txt: "New Launches",
+      },
+      {
+        url: "",
+        txt: "Divueens Fashion",
+      },
+    ],
+  },
+  {
+    title: "TOP CATEGORIES",
+    chhotiList: [
+      {
+        url: "",
+        txt: "Makeup",
+      },
+      {
+        url: "",
+        txt: "Hair",
+      },
+      {
+        url: "",
+        txt: "Organics",
+      },
+    ],
+  },
+];
 
 function FooterBlock() {
   const [toggleView, cngView] = useState(0);
@@ -11,153 +122,29 @@ function FooterBlock() {
   function ListItemsAll() {
     return (
       <div className="upperFooterPart-1">
-        <div className="upf1 footer-col">
-          <h3 onClick={() => (prev !== 1 ? cngView(1) : cngView(0))} className="drpBtn">
-            Who are we ?{" "}
-            <i
-              className={`fa-solid ${
-                toggleView === 1 ? "fa-chevron-up" : "fa-chevron-down"
-              }`}
-            ></i>
-          </h3>
-          <ul className={`close ${toggleView === 1 ? "all_Items" : ""}`}>
-            <li>
-              <Link to="/ourteam" className="footerList">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link className="footerList">Press</Link>
-            </li>
-            <li>
-              <Link className="footerList">Authenticity</Link>
-            </li>
-            <li>
-              <Link className="footerList">Careers CSR</Link>
-            </li>
-            <li>
-              <Link className="footerList">Divueens</Link>
-            </li>
-            <li>
-              <Link className="footerList">Investor Relation</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="upf2 footer-col">
-          <h3 onClick={() => (prev !== 2 ? cngView(2) : cngView(0))} className="drpBtn">
-            Help{" "}
-            <i
-              className={`fa-solid ${
-                toggleView === 2 ? "fa-chevron-up" : "fa-chevron-down"
-              }`}
-            ></i>
-          </h3>
-          <ul className={`close ${toggleView === 2 ? "all_Items" : ""}`}>
-            <li>
-              <Link to="/contact" className="footerList">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link className="footerList">Frequently Asked Questions</Link>
-            </li>
-            <li>
-              <Link className="footerList">Cancellation and Return</Link>
-            </li>
-            <li>
-              <Link className="footerList">Shipping and Delivery </Link>
-            </li>
-            <li>
-              <Link className="footerList">Sell on Divueens</Link>
-            </li>
-            <li>
-              <Link className="footerList">Privacy Policy</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="upf3 footer-col">
-          <h3 onClick={() => (prev !== 3 ? cngView(3) : cngView(0))} className="drpBtn">
-            INSPIRE US{" "}
-            <i
-              className={`fa-solid ${
-                toggleView === 3 ? "fa-chevron-up" : "fa-chevron-down"
-              }`}
-            ></i>
-          </h3>
-          <ul className={`close ${toggleView === 3 ? "all_Items" : ""}`}>
-            <li>
-              <Link to="/books" className="footerList">
-                Beauty Books
-              </Link>
-            </li>
-            <li>
-              <Link className="footerList">Divueens Network</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="upf4 footer-col">
-          <h3 onClick={() => (prev !== 4 ? cngView(4) : cngView(0))} className="drpBtn">
-            QUICK LINKS{" "}
-            <i
-              className={`fa-solid ${
-                toggleView === 4 ? "fa-chevron-up" : "fa-chevron-down"
-              }`}
-            ></i>
-          </h3>
-          <ul className={`close ${toggleView === 4 ? "all_Items" : ""}`}>
-            <li>
-              <Link to="/offer" className="footerList">
-                Special Offers
-              </Link>
-            </li>
-            <li>
-              <Link className="footerList">Trendings</Link>
-            </li>
-            <li>
-              <Link className="footerList">New Launches</Link>
-            </li>
-            <li>
-              <Link className="footerList">Divueens Fashion</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="upf5 footer-col">
-          <h3 onClick={() => (prev !== 5 ? cngView(5) : cngView(0))} className="drpBtn">
-            TOP CATEGORIES{" "}
-            <i
-              className={`fa-solid ${
-                toggleView === 5 ? "fa-chevron-up" : "fa-chevron-down"
-              }`}
-            ></i>
-          </h3>
-          <ul className={`close ${toggleView === 5 ? "all_Items" : ""}`}>
-            <li>
-              <Link to="/makeup" className="footerList">
-                Makeup
-              </Link>
-            </li>
-            <li>
-              <Link className="footerList">Hair</Link>
-            </li>
-            <li>
-              <Link className="footerList">Organics</Link>
-            </li>
-          </ul>
-        </div>
+        {baadiList.map((lst, index) => {
+          return (
+            <div className="footer-col" key={index}>
+              <h3 onClick={() => (prev !== index+1 ? cngView(index+1) : cngView(0))} className="drpBtn">
+                {lst.title} <i className={`fa-solid ${toggleView === index+1 ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+              </h3>
+              <ul className={`close ${toggleView === index+1 ? "all_Items" : ""}`}>
+                {lst.chhotiList.map((list2, int) => {
+                  return (
+                    <li key={int}><Link to={list2.url} className="footerList">{list2.txt}</Link></li>
+                  )})}
+              </ul>
+            </div>
+          )})}
       </div>
     );
   }
-  // function cngPrev(toggleView){if (prev === toggleView ) {cngPrev(0)} else {cngPrev(toggleView)}}
+
   useEffect(() => {
     ListItemsAll();
     cngPrev(toggleView);
   }, [toggleView]);
-  // document.getElementsByClassName('close')[n-1].classList.toggle('all_Items');
-  // if (document.getElementsByClassName('fa-solid')[n-1].classList.contains('fa-chevron-up')) {
-  //   document.getElementsByClassName('fa-solid')[n-1].classList.replace('fa-chevron-up', 'fa-chevron-down');
-  // } else {
-  //   document.getElementsByClassName('fa-solid')[n-1].classList.replace('fa-chevron-down', 'fa-chevron-up');
-  // }
+
   return (
     <div className="footermain">
       <div className="upperFooterPart">
