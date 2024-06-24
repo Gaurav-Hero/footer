@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const baadiList = [
   {
